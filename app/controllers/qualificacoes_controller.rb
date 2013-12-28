@@ -24,6 +24,8 @@ class QualificacoesController < ApplicationController
   # GET /qualificacoes/new
   # GET /qualificacoes/new.json
   def new
+    @clientes = Cliente.order :nome
+    @restaurantes = Restaurante.order :nome
     @qualificacao = Qualificacao.new
 
     respond_to do |format|
@@ -34,6 +36,8 @@ class QualificacoesController < ApplicationController
 
   # GET /qualificacoes/1/edit
   def edit
+    @clientes = Cliente.order :nome
+    @restaurantes = Restaurante.order :nome
     @qualificacao = Qualificacao.find(params[:id])
   end
 
