@@ -2,7 +2,7 @@
 
 <p>
   <b>Cliente:</b>
-  <%= @qualificacao.nome %>
+  <%= @qualificacao.cliente.nome %>
 </p>
 
 <p>
