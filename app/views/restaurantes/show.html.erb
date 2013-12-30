@@ -15,5 +15,10 @@
   <%= @restaurante.especialidade %>
 </p>
 
+<p>
+  <%= novo_comentario @restaurante %>
+
+</p>
+
 <%= link_to 'Editar', action: 'edit', id: @restaurante %>
 <%= link_to 'Voltar', action: 'index' %>
